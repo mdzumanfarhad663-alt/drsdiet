@@ -523,3 +523,14 @@ textarea.field { height: 160px; padding: 14px 20px; resize: vertical; border-rad
   .hero-bg img { object-position: 72% 30%; }
   .hero-badges { margin-top: 24px; }
 }
+
+/* Compact product cards */
+.card-media { height: 250px; padding: 20px 20px 0; }
+@media (min-width: 1000px) { .card-media { height: 270px; } }
+.card-media img { border-radius: 10px; }
+.card-body { padding: 18px 22px 20px; }
+.card h3 { font-size: 18px; margin-bottom: 4px; }
+.card p { font-size: 15px; line-height: 1.5; margin-bottom: 14px; }
+.card-foot { padding-top: 14px; }
+.card .price { font-size: 17px; }
+.btn--sm { height: 40px; padding: 0 16px; }

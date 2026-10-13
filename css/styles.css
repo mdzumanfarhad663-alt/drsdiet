@@ -535,3 +535,26 @@ textarea.field { height: 160px; padding: 14px 20px; resize: vertical; border-rad
 .card-foot { padding-top: 14px; }
 .card .price { font-size: 17px; }
 .btn--sm { height: 40px; padding: 0 16px; }
+
+/* Bundle page: lighter hero and more compact included products */
+.bundle-hero .offer > h1 { font-size: clamp(34px, 3.8vw, 50px); letter-spacing: -.04em; margin-bottom: 12px; }
+.bundle-hero .trio { min-height: 420px; padding: 32px 14px; }
+.bundle-hero .trio img { width: 27%; transition: transform .55s var(--ease); }
+.bundle-hero .trio .t1 { transform: rotate(-5deg) translateX(17%); }
+.bundle-hero .trio .t3 { transform: rotate(5deg) translateX(-17%); }
+.bundle-hero .trio .t2 { width: 35%; max-width: 270px; }
+.bundle-hero .trio:hover .t1 { transform: rotate(-7deg) translateX(12%); }
+.bundle-hero .trio:hover .t3 { transform: rotate(7deg) translateX(-12%); }
+.bundle-hero .trio:hover .t2 { transform: translateY(-4px); }
+.included-item { border-radius: 16px; transition: transform .42s var(--ease), box-shadow .42s var(--ease); }
+.included-item img { height: 220px; aspect-ratio: auto; object-fit: contain; padding: 14px 18px 0; }
+.included-item div { padding: 16px 18px 20px; }
+.included-item h3 { font-size: 19px; }
+@media (max-width: 899px) {
+  .bundle-hero .trio { min-height: 320px; }
+  .bundle-hero .offer > h1 { font-size: clamp(32px, 8vw, 40px); }
+}
+@media (max-width: 767px) {
+  .included-item img { height: 190px; }
+  .included-item div { padding: 14px 16px 18px; }
+}
